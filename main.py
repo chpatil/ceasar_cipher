@@ -26,7 +26,7 @@ def initiate():
   else:
     print("Please enter correct input")
 
-    
+
 import art
 ask_flag=True
 print(art.logo)
@@ -38,4 +38,11 @@ while(repeat=="yes"):
     print("Goodbye!!")
   elif(repeat != "yes"):
     print ("Please enter right input")
-    repeat="yes"
+    while(True):
+      repeat=input("Do you want to continue?").lower()
+      if(repeat=="yes"):
+        break
+      elif(repeat=="no"):
+        print("Goodbye!!")
+        break
+
